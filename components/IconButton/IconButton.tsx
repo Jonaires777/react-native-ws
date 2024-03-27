@@ -1,5 +1,6 @@
-import { Pressable, StyleSheet, Text } from "react-native";
+import { Pressable, Text } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { styles } from "./IconButtonStyle";
 
 type IconButtonProps = {
     icon: "label" | "save-alt" | "refresh"
@@ -16,13 +17,3 @@ export default function IconButton({icon, label, onPress} : IconButtonProps) {
     )
 }
 
-const styles = StyleSheet.create({
-    iconButton: {
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    iconButtonLabel: {
-        color: '#fff',
-        marginTop: 12,
-    }
-})

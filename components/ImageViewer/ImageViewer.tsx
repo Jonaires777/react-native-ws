@@ -1,4 +1,5 @@
-import { StyleSheet, Image, ImageSourcePropType } from "react-native";
+import { Image, ImageSourcePropType } from "react-native";
+import { styles } from "./ImageVieweStyle";
 
 type ImageProps = {
   placeholderImageSource: ImageSourcePropType;
@@ -15,11 +16,3 @@ export default function ImageViewer({
 
   return <Image source={imageSource} style={styles.image} />;
 }
-
-const styles = StyleSheet.create({
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
-  },
-});
