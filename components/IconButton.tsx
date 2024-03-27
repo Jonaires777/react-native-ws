@@ -4,7 +4,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 type IconButtonProps = {
     icon: "label" | "save-alt" | "refresh"
     label: string;
-    onPress: () => Promise<void> | void
+    onPress: () => Promise<void> | void | Promise<React.JSX.Element>
 }
 
 export default function IconButton({icon, label, onPress} : IconButtonProps) {
